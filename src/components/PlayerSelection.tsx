@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import './PlayerSelection.css';
 
 export default function PlayerSelection() {
-  const { gameState, setPlayerCount, setImpostorCount } = useGame();
+  const { setPlayerCount, setImpostorCount } = useGame();
   const navigate = useNavigate();
   const [selectedPlayers, setSelectedPlayers] = useState<number | null>(null);
   const playerOptions = [3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
